@@ -1,0 +1,846 @@
+
+/* animate github corner ribbon */
+.github-corner .octo-triangle{
+  fill: #c9d6de;
+  transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	-webkit-transition: all ease 0.5s;
+	-o-transition: all ease 0.5s;
+}
+.github-corner:hover .octo-triangle{
+  fill: #f0f5f9;
+  transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	-webkit-transition: all ease 0.5s;
+	-o-transition: all ease 0.5s;
+}
+.github-corner:hover .octo-arm{
+  animation:octocat-wave 560ms ease-in-out;
+}
+@keyframes octocat-wave{
+  0%,100%{transform:rotate(0)}
+  20%,60%{transform:rotate(-25deg)}
+  40%,80%{transform:rotate(10deg)}
+}
+@media (max-width:500px){
+  .github-corner:hover .octo-arm{
+    animation:none
+  }
+  .github-corner .octo-arm{
+    animation:octocat-wave 560ms ease-in-out
+  }
+}
+
+/* main body style sheet */
+body{
+  font-family: "Montserrat", Arial, sans-serif;
+  color:#c9d6de;
+
+  background-attachment: fixed;
+  background-color:#1e2022;
+  background-image: radial-gradient(#52616a 0%, transparent 4%),
+  radial-gradient(#52616a 0%, transparent 4%);
+  background-size:30px 30px;
+  background-position: 0 0, 15px 15px;
+  overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5{
+  font-family: "butlerbold", serif;
+
+  /*font-weight: 400;*/
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+
+
+#headerContainer{
+  background-color: #52616a;
+  /*height: 40vh;*/
+  font-size: 14px;
+  padding-top: 140px;
+  padding-bottom: 70px;
+  box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.3), 0 0 20px 8px rgba(0, 0, 0, 0.28);
+  z-index: 1;
+}
+#headerContent{
+  width: 96%;
+  max-width: 1000px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+#headerContent h1{
+  color: #f0f5f9;
+  font-family: "butlermedium", serif;
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+@media (min-width: 544px) {
+  #headerContent h1{
+    font-size: 50px;
+  }
+}
+@media (min-width: 768px) {
+  #headerContent h1{
+    font-size: 50px;
+  }
+}
+@media (min-width: 992px) {
+  #headerContent h1{
+    font-size: 80px;
+  }
+}
+@media (min-width: 1600px) {
+  #headerContent h1{
+    font-size: 100px;
+  }
+}
+#headerContent h2{
+  color: #f0f5f9;
+  font-family: "butlermedium", serif;
+  font-size: 14px;
+  margin-top: -5px;
+  margin-bottom: 60px;
+}
+@media (min-width: 544px) {
+  #headerContent h2{
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) {
+  #headerContent h2{
+    font-size: 20px;
+  }
+}
+@media (min-width: 992px) {
+  #headerContent h2{
+    font-size: 24px;
+  }
+}
+@media (min-width: 1600px) {
+  #headerContent h2{
+    font-size: 30px;
+  }
+}
+
+
+.leadTextBox{
+  margin-top: 100px;
+  text-align: center;
+  color: #c9d6de;
+}
+.leadTextBox h1{
+  font-family: "butlerbold", serif;
+  font-size: 32px;
+}
+.leadTextBox p{
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 16px;
+}
+
+.learnMoreButton{
+  cursor: pointer;
+}
+.infographic{
+  text-align: center;
+}
+.infographic .panel{
+  height: 0px;
+  overflow: hidden;
+  text-align: left;
+}
+
+a{
+  color: #f0f5f9;
+}
+a:hover{
+  color: #c9d6de;
+}
+a, a:hover {
+	text-decoration: none;
+}
+.socialbtns, .socialbtns ul, .socialbtns li{
+	margin: 0;
+	padding: 5px;
+}
+.socialbtns li {
+    list-style: none outside none;
+    display: inline-block;
+}
+.socialbtns .fa {
+	width: 30px;
+  height: 30px;
+	color: #52616a;
+	background-color: #c9d6de;
+	padding-top: 9px;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-o-border-radius: 15px;
+	transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	-webkit-transition: all ease 0.5s;
+	-o-transition: all ease 0.5s;
+}
+.socialbtns .fa:hover {
+  background-color: #f0f5f9;
+	transform: scale(1.33,1.33);
+	-moz-transform: scale(1.33,1.33);
+	-webkit-transform: scale(1.33,1.33);
+	-o-transform: scale(1.33,1.33);
+	transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	-webkit-transition: all ease 0.5s;
+	-o-transition: all ease 0.5s;
+}
+
+
+
+
+
+
+.resonanceContainer{
+  margin-top: 18vh;
+  margin-bottom: 18vh;
+  margin-left: 12px;
+  margin-right: 12px;
+  box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.3), 0 0 20px 8px rgba(0, 0, 0, 0.28);
+}
+
+.macroHalfDiv{
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  height: 70vh;
+}
+
+.titleTile{
+  background-color: #52616a;
+  height: 35vh;
+  text-align: center;
+  color: #c9d6de;
+
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.titleTile h3{
+  font-size: 24px;
+  line-height: 1.1;
+}
+@media (min-width: 768px) {
+  .titleTile h3{
+    font-size: 32px;
+  }
+}
+@media (min-width: 992px) {
+  .titleTile h3{
+    font-size: 42px;
+  }
+}
+
+.titleTile i{
+  font-size: 24px;
+  cursor: pointer;
+  /*
+  margin-left: -12px;
+  margin-right: 0px;
+  position: absolute;
+  bottom: 0px;
+  */
+}
+.orbitTile{
+  background-color: #52616a;
+  height: 35vh;
+}
+.spiroTile{
+  background-color: #1e2022;
+  height: 70vh;
+}
+
+
+.titleTile_Container{
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+  color: #c9d6de;
+}
+.titleTile_Container p{
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #c9d6de;
+}
+.titleTile_Table th{
+  text-align: center;
+  border: 1px solid #c9d6de;
+  color: #f0f5f9;
+}
+.titleTile_Table td{
+  border: 1px solid #c9d6de;
+}
+.titleTile_Table thead th{
+  border-bottom-width: 1px;
+  border-bottom-color: #c9d6de;
+}
+
+
+
+
+
+
+
+.animation {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+
+.titleTile {
+  position: relative;
+  margin: 0 auto;
+
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .3s ease;
+
+  padding-left: 0px;
+  padding-right: 0px;
+  /*depth of the elements */
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -o-perspective: 800px;
+  perspective: 800px;
+}
+@media (min-width: 720px) {
+  .titleTile{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.titleTile .flippingCard.flipped {
+  -webkit-transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -o-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );
+}
+.titleTile .flippingCard {
+  width: 100%;
+  height: 100%;
+
+
+  /*transition effects */
+  -webkit-transition: -webkit-transform 0.6s;
+  -moz-transition: -moz-transform 0.6s;
+  -o-transition: -o-transform 0.6s;
+  transition: transform 0.6s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.titleTile .flippingCard .face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  z-index: 2;
+  font-size: 25px;
+  text-align: center;
+  background: #52616a;
+
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.titleTile .flippingCard .front {
+  position: absolute;
+  z-index: 1;
+}
+.titleTile .flippingCard .back {
+  -webkit-transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -o-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.orbitTile_Container{
+  padding: 0px;
+}
+.OrbitCentralBody{
+  fill: #c9d6de;
+}
+.OrbitOrbitalArc{
+  fill: none;
+  stroke: #c9d6de;
+  stroke-opacity: 0.33;
+  stroke-width: 1;
+}
+.OrbitOuterBody{
+  fill: #52616a;
+  stroke-width: 2.5;
+}
+.noOrbitOuterBodyFill{
+  fill: #52616a !important;
+  stroke-width: 2.5;
+}
+
+.OrbitOuterBodyLabel{
+  fill: #c9d6de;
+  font-size: 12px;
+  text-shadow: 1px 1px 3px #1e2022;
+}
+@media (min-width: 544px) {
+  .OrbitOuterBodyLabel{
+    font-size: 16px;
+  }
+}
+.noOrbitOuterBodyLabelFill{
+  fill: #c9d6de; !important;
+  opacity: 0.67;
+  font-size: 8px;
+  text-shadow: 1px 1px 3px #1e2022;
+}
+@media (min-width: 544px) {
+  .noOrbitOuterBodyLabelFill{
+    font-size: 12px;
+  }
+}
+.OrbitCentralBodyLabel{
+  fill: #c9d6de;
+  font-size: 12px;
+  text-shadow: 1px 1px 3px #1e2022;
+}
+@media (min-width: 544px) {
+  .OrbitCentralBodyLabel{
+    font-size: 16px;
+  }
+}
+
+
+.spiroTile_Container{
+  padding: 0px;
+  margin-top: 0px;
+  color: #52616a;
+  height: 100%;
+  /*
+  border: 2px solid orange;
+  */
+  overflow: hidden;
+}
+.spiroTile_UI{
+	margin: 0px;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 8px;
+  margin-top: 0px;
+  height: 100%;
+}
+
+
+
+
+
+/* The side navigation menu */
+.menuDiv {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #c9d6de; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px; /* Place content 60px from the top */
+    transition: 0.28s; /* 0.5 second transition effect to slide in the sidenav */
+    display: inline-block;
+
+    -o-box-shadow:      inset 10px 0px 5px 0px rgba(30,32,34,0.25),
+                        inset -10px 0px 5px 0px rgba(30,32,34,0.1);
+    -webkit-box-shadow: inset 10px 0px 5px 0px rgba(30,32,34,0.25),
+                        inset -10px 0px 5px 0px rgba(30,32,34,0.1);
+    -moz-box-shadow:    inset 10px 0px 5px 0px rgba(30,32,34,0.25),
+                        inset -10px 0px 5px 0px rgba(30,32,34,0.1);
+    box-shadow:         inset 10px 0px 5px 0px rgba(30,32,34,0.25),
+                        inset -10px 0px 5px 0px rgba(30,32,34,0.1);
+    /*
+    border: 2px solid green;
+    */
+}
+
+/* The navigation menu links */
+.menuDiv a {
+    padding: 0px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #52616a;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* When you mouse over the navigation links, change their color */
+.menuDiv a:hover, .offcanvas a:focus{
+    color: #1e2022;
+}
+
+/* Position and style the close button (top right corner) */
+.menuDiv .closebtn {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.menuDiv .container-fluid{
+
+}
+.menuDiv .row{
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.menuDiv .menuCol{
+  padding-left: 0px;
+}
+.menuDiv .titleRow{
+  font-size: 10px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+@media (min-width: 544px) {
+  .menuDiv .titleRow{
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .menuDiv .titleRow{
+    font-size: 24px;
+  }
+}
+@media (min-width: 992px) {
+  .menuDiv .titleRow{
+    font-size: 32px;
+  }
+}
+
+.menuDiv .menuItemRow{
+  font-size: 6px;
+  padding-top: 24px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid rgba(82,97,106,0.24);
+}
+@media (min-width: 544px) {
+  .menuDiv .menuItemRow{
+    font-size: 8px;
+  }
+}
+@media (min-width: 768px) {
+  .menuDiv .menuItemRow{
+    font-size: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .menuDiv .menuItemRow{
+    font-size: 12px;
+  }
+}
+.menuDiv .menuItemTitle{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.menuDiv .titleRow p{
+  float: left; white-space: nowrap;
+}
+.menuDiv .menuItemRow p{
+  float: left; white-space: nowrap;
+}
+
+
+
+.primarySwitch {
+  padding: 0px;
+}
+.primarySwitch input {
+  display: none;
+}
+.primarySwitch label {
+  float: left;
+}
+.primarySwitch label {
+  display: inline-block;
+  background-color: none;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: normal;
+  text-align: center;
+  text-shadow: none;
+  padding: 2px 10px;
+  margin-right: 4px;
+  margin-top: -2px;
+  border-radius: 16px;
+}
+
+.primarySwitch label:hover {
+	cursor: pointer;
+  background-color: rgba(82,97,106,0.15);
+}
+
+.primarySwitch input:checked + label {
+  background-color: rgba(82,97,106,0.1);
+  font-weight: bold;
+}
+
+
+
+
+
+
+.spiroTile_settings{
+  position:absolute;/**/
+  cursor: pointer;
+  color: #52616a !important;
+  z-index: 999999;
+  top: 8px;
+  left: 8px;
+}
+.spiroTile_settings:hover{
+  color: #c9d6de !important;
+  z-index: 999999;
+}
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+.spiroGraphicDiv {
+    transition: margin-left .28s;
+    padding: 00px;
+
+    top: 0;
+    left: 0;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+
+
+    /*
+    border: 2px solid blue;
+    */
+}
+.spiroTile_svg{
+
+  top: 0;
+  left: 0;
+  z-index: 100;
+  overflow: hidden;
+}
+.spiroPrimaryBody{
+  fill: #c9d6de;
+}
+.SpiroOuterBody{
+  fill: #1e2022;
+  stroke-width: 2.5;
+}
+.noSpiroOuterBodyFill{
+  fill: #1e2022 !important;
+  stroke-width: 2.5;
+}
+.SpiroBodyTraces{
+  fill: rgba(201, 214, 222, 0.0);
+  stroke: rgba(201, 214, 222, 0.2);
+  stroke-width: 1.5;
+}
+.spiroCog{
+  fill: rgba(82, 97, 106, 0.4);
+  stroke: rgba(82, 97, 106, 0);
+  stroke-width: 1.0;
+}
+.spiroInnerCog{
+  fill: rgba(82, 97, 106, 0.4);
+}
+.sprioCogText{
+  fill: #c9d6de;
+  font-size: 6px;
+}
+@media (min-width: 544px) {
+  .sprioCogText{
+    font-size: 10px;
+  }
+}
+.sprioCogLine{
+  stroke-width: 1.0;
+  stroke: #52616a;
+  stroke-dasharray: 12, 6;
+}
+.sprioColoredCogLine{
+  stroke-width: 2.0;
+}
+
+
+.spiroPrimaryBodyLabel{
+  fill: #c9d6de;
+  font-size: 16px;
+  text-shadow: 1px 1px 3px #1e2022;
+}
+.spiroOuterBodyLabel{
+  fill: #c9d6de;
+  font-size: 10px;
+  text-shadow: 1px 1px 3px #1e2022;
+}
+@media (min-width: 544px) {
+  .spiroOuterBodyLabel{
+    font-size: 16px;
+  }
+}
+.noSpiroOuterBodyLabelFill{
+  fill: #c9d6de; !important;
+  opacity: 0.67;
+  font-size: 8px;
+  text-shadow: 1px 1px 3px #1e2022;
+}
+@media (min-width: 544px) {
+  .noSpiroOuterBodyLabelFill{
+    font-size: 12px;
+  }
+}
+
+
+.descriptorText{
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 0.8rem;
+}
+
+
+
+
+
+.switch {
+  display: inline-block;
+  position: relative;
+  width: 2.5rem;
+  height: 1rem;
+  border-radius: 0.5rem;
+  background: rgba(82,97,106,0.4);
+  -webkit-transition: background 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  vertical-align: middle;
+  cursor: pointer;
+}
+.switch::before {
+  content: '';
+  position: absolute;
+  top: -0.25rem;
+  left: -0.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #f0f5f9;
+  background: #D7DCE0; /*10% darker*/
+  box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.28);
+  border-radius: 50%;
+  -webkit-transition: left 0.28s cubic-bezier(0.4, 0, 0.2, 1), background 0.28s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: left 0.28s cubic-bezier(0.4, 0, 0.2, 1), background 0.28s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.switch:active::before {
+  box-shadow: 0 0.25rem 0.5rem rgba(82,97,106,0.28), 0 0 0 1.25rem rgba(50,50,50,0.28);
+}
+input:checked + .switch {
+  background: rgba(82,97,106,0.6);
+}
+input:checked + .switch::before {
+  left: 1.25rem;
+  background: #52616a;
+  background: #85949D; /*20% lighter*/
+}
+input:checked + .switch:active::before {
+  box-shadow: 0 0.25rem 0.5rem rgba(82,97,106,0.28), 0 0 0 1.25rem rgba(82,97,106,0.48);
+}
+
+
+.narrativeText{
+  text-align: center;
+  margin-top: -15px;
+  margin-bottom: -15px;
+}
+.narrativeText a{
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+.narrativeText a:hover{
+  cursor: pointer;
+}
+.narrativeBody{
+  position: absolute;
+  height: 70px;
+  min-width:  200px;
+  bottom: -20px;
+  right: -20px;
+  background-color: #82B1FF;
+  z-index: 999;
+  color: #1e2022;
+}
+.narrativeFold{
+  position: absolute;
+  height: 20px;
+  width:  20px;
+  bottom: 49px;
+  right: -20px;
+}
+.narrativeFold:after{
+  content: '';
+	display: block;
+	position: absolute;
+  top: 0px;
+  right: 0px;
+	width: 0;
+	height: 0;
+	border-top: 0 solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 20px solid #42567F;
+	border-left: 0 solid transparent;
+}
+
+
+
+
+
+#footerContainer{
+  background-color: #52616a;
+  /*height: 40vh;*/
+  font-size: 14px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.3), 0 0 20px 8px rgba(0, 0, 0, 0.28);
+}
+#footerContent{
+  width: 50%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+#footerContent .authorCred a{
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}

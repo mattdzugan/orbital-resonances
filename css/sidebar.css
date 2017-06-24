@@ -1,0 +1,77 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11pt;
+  color: #FFF;
+  line-height: normal;
+  font-smoothing: antialiased;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 50px;
+  min-width: 50px;
+  margin: 25px;
+  background: #2a2447;
+  transition: all 0.5s ease-in-out;
+  z-index: 5;
+}
+#sidebar:hover {
+  max-width: 100%;
+}
+#sidebar .logo {
+  cursor: default;
+  width: 100%;
+  height: 50px;
+  background: #FFF;
+  font-size: 22pt;
+  color: #2a2447;
+  font-weight: 800;
+  line-height: 50px;
+  text-align: center;
+}
+#sidebar ul li {
+  overflow: hidden;
+  transition: all .3s ease;
+  white-space: nowrap;
+}
+#sidebar ul li a {
+  height: 50px;
+  /*
+  border-top: 1px solid #9783b7;
+  */
+  display: block;
+  color: #FFF;
+  line-height: 50px;
+  text-decoration: none;
+}
+#sidebar ul li a i {
+  width: 50px;
+  height: 50px;
+  /*
+  box-shadow: 1px 0 #9783b7;
+  */
+  font-size: 12pt;
+  text-align: center;
+  line-height: 50px;
+}
+#sidebar ul li a span {
+  padding: 0 15px;
+  opacity: 0;
+  transform: translateX(15px);
+  transition: all 0.5s ease-in-out;
+}
+#sidebar ul li:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+#sidebar:hover ul li a span {
+  opacity: 1;
+  transform: translateX(0);
+}

@@ -1,0 +1,567 @@
+ <!DOCTYPE html>
+<!--
+
+Hi, I'm Matt Dzugan
+This page was developed from my apartment in Los Angeles.
+While working on it, my feet were acting as a chin-rest for https://www.instagram.com/diegofiestaforever/
+Hope you enjoy!
+
+ -->
+<html>
+	<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Orbital Resonances</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./css/fonts.css" rel="stylesheet">
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+    <link href="./css/animations.css" rel="stylesheet">
+    <!--<link href="./css/background.css" rel="stylesheet">
+    <link href="./css/sidebar.css" rel="stylesheet">-->
+    <!-- Javascript libraries -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://raw.githubusercontent.com/bgrins/TinyColor/master/tinycolor.js"></script>
+  </head>
+  <body>
+    <!-- Github Corner OctoCat -->
+    <a href="#" class="github-corner">
+      <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#52616a; color:#52616a; position: absolute; top: 0; border: 0; right: 0;">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z" class="octo-triangle"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+      </svg>
+    </a>
+    <!-- Header Section -->
+    <div class="container-fluids" id="headerContainer">
+      <div id="headerContent">
+        <h1>Orbital Resonances</h1>
+        <h2>mother nature's spirograph</h2>
+        <div class="learnMoreContainer">
+          <div class="planetoid"></div>
+          <div class="bouncysurface"></div>
+          <a class="learnMoreButton" id="learnMoreButton">
+            <div class="learnMoreText"><p>Huh?</p></div>
+          </a>
+        </div>
+        <div class="infographic hidden row" id="infographic">
+          <div class="panel col-xl-6 col-md-6 col-xs-12">
+            <div class="panelcontent" id="panelcontent1">
+              <div class="trampoline">
+                <div class="support support1"></div>
+                <div class="support support2"></div>
+                <div class="support support3"></div>
+                <div class="support support4"></div>
+                <div class="outerRing"></div>
+                <div class="surface"></div>
+                <ul class="characters" id="characters">
+                  <!-- astronaut -->
+                  <li>
+                    <div class="char1">
+                      <div class="imprint"></div>
+                      <div class="astronaut">
+                        <div class="backpack"></div>
+                        <div class="suit">
+                          <div class="armGroup leftArmGroup">
+                            <div class="hand"></div>
+                            <div class="Arm"></div>
+                          </div>
+                          <div class="armGroup rightArmGroup">
+                            <div class="hand"></div>
+                            <div class="Arm"></div>
+                          </div>
+                          <div class="Leg leftLeg">
+                            <div class="legBend"></div>
+                            <div class="Boot leftBoot"></div>
+                          </div>
+                          <div class="Leg rightLeg">
+                            <div class="legBend"></div>
+                            <div class="Boot rightBoot"></div>
+                          </div>
+
+
+                          <div class="body">
+                            <div class="badge"></div>
+                            <div class="suitLine suitLine1"></div>
+                            <div class="suitLine suitLine2"></div>
+                            <div class="suitLine suitLine3"></div>
+                            <div class="suitLine suitLine4"></div>
+                          </div>
+                        </div>
+                        <div class="helmet">
+                          <div class="shieldGroup">
+                            <div class="shield"></div>
+                            <div class="glare1"></div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </li>
+                  <!-- alien -->
+                  <li>
+                    <div class="char2">
+                      <div class="imprint"></div>
+                      <div class="alien">
+                        <div class="body">
+                          <div class="arm leftArm"></div>
+                          <div class="arm rightArm"></div>
+                          <div class="foot leftFoot"></div>
+                          <div class="foot rightFoot"></div>
+                          <div class="torso"></div>
+                        </div>
+                        <div class="head">
+                          <div class="boomBoop">
+                            <div class="boom"></div>
+                            <div class="boop"></div>
+                          </div>
+                          <div class="ear leftEar"></div>
+                          <div class="ear rightEar"></div>
+                          <div class="face">
+                            <div class="eye leftEye"></div>
+                            <div class="eye rightEye"></div>
+                            <div class="mouth">
+                              <div class="lips"></div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div
+                    </div>
+                  </li>
+                  <!-- rover -->
+                  <li>
+                    <div class="char3">
+                      <div class="imprint"></div>
+                      <div class="rover">
+                        <div class="antenna"></div>
+                        <div class="body">
+                          <div class="lense"></div>
+                          <div class="main"></div>
+                          <div class="bolt"></div>
+                        </div>
+                        <div class="rig">
+                          <div class="wheel wheel1"></div>
+                          <div class="wheel wheel2"></div>
+                          <div class="wheel wheel3"></div>
+                          <div class="bracket bracket1"></div>
+                          <div class="bracket bracket2"></div>
+                          <div class="bracket bracket3"></div>
+                          <div class="bracket bracket4"></div>
+                          <div class="bracket bracket5"></div>
+                          <div class="bracket bracket6"></div>
+                          <div class="bracket bracket7"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <p class="caption">
+                Imagine a trampoline with multiple jumpers. Typically the bounces of one jumper are unrelated to the bounces of another jumper.
+              </p>
+            </div>
+          </div>
+          <div class="panel col-xl-6 col-md-6 col-xs-12">
+            <div class="panelcontent" id="panelcontent2">
+              <div class="trampoline">
+                <div class="support support1"></div>
+                <div class="support support2"></div>
+                <div class="support support3"></div>
+                <div class="support support4"></div>
+                <div class="outerRing"></div>
+                <div class="surface"></div>
+                <ul class="characters" id="characters">
+                  <div class="bigImprint"></div>
+                  <!-- astronaut -->
+                  <li>
+                    <div class="char1">
+                      <div class="imprint"></div>
+                      <div class="astronaut">
+                        <div class="backpack"></div>
+                        <div class="suit">
+                          <div class="armGroup leftArmGroup">
+                            <div class="hand"></div>
+                            <div class="Arm"></div>
+                          </div>
+                          <div class="armGroup rightArmGroup">
+                            <div class="hand"></div>
+                            <div class="Arm"></div>
+                          </div>
+                          <div class="Leg leftLeg">
+                            <div class="legBend"></div>
+                            <div class="Boot leftBoot"></div>
+                          </div>
+                          <div class="Leg rightLeg">
+                            <div class="legBend"></div>
+                            <div class="Boot rightBoot"></div>
+                          </div>
+
+
+                          <div class="body">
+                            <div class="badge"></div>
+                            <div class="suitLine suitLine1"></div>
+                            <div class="suitLine suitLine2"></div>
+                            <div class="suitLine suitLine3"></div>
+                            <div class="suitLine suitLine4"></div>
+                          </div>
+                        </div>
+                        <div class="helmet">
+                          <div class="shieldGroup">
+                            <div class="shield"></div>
+                            <div class="glare1"></div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </li>
+                  <!-- alien -->
+                  <li>
+                    <div class="char2">
+                      <div class="imprint"></div>
+                      <div class="alien">
+                        <div class="body">
+                          <div class="arm leftArm"></div>
+                          <div class="arm rightArm"></div>
+                          <div class="foot leftFoot"></div>
+                          <div class="foot rightFoot"></div>
+                          <div class="torso"></div>
+                        </div>
+                        <div class="head">
+                          <div class="boomBoop">
+                            <div class="boom"></div>
+                            <div class="boop"></div>
+                          </div>
+                          <div class="ear leftEar"></div>
+                          <div class="ear rightEar"></div>
+                          <div class="face">
+                            <div class="eye leftEye"></div>
+                            <div class="eye rightEye"></div>
+                            <div class="mouth">
+                              <div class="lips"></div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <p class="caption">
+                ...But every once in a while, the timing lines up such that a pair of jumpers' bounces affect each-other.
+              </p>
+            </div>
+          </div>
+          <div class="panel col-xl-6 col-md-6 col-xs-12">
+            <div class="panelcontent" id="panelcontent3">
+              <div class="trampoline">
+                <div class="support support1"></div>
+                <div class="support support2"></div>
+                <div class="support support3"></div>
+                <div class="support support4"></div>
+                <div class="outerRing"></div>
+                <div class="surface"></div>
+                <ul class="characters" id="characters">
+                  <!-- astronaut -->
+                  <li>
+                    <div class="char1">
+                      <div class="imprint"></div>
+                      <div class="astronaut">
+                        <div class="backpack"></div>
+                        <div class="suit">
+                          <div class="armGroup leftArmGroup">
+                            <div class="hand"></div>
+                            <div class="Arm"></div>
+                          </div>
+                          <div class="armGroup rightArmGroup">
+                            <div class="hand"></div>
+                            <div class="Arm"></div>
+                          </div>
+                          <div class="Leg leftLeg">
+                            <div class="legBend"></div>
+                            <div class="Boot leftBoot"></div>
+                          </div>
+                          <div class="Leg rightLeg">
+                            <div class="legBend"></div>
+                            <div class="Boot rightBoot"></div>
+                          </div>
+
+
+                          <div class="body">
+                            <div class="badge"></div>
+                            <div class="suitLine suitLine1"></div>
+                            <div class="suitLine suitLine2"></div>
+                            <div class="suitLine suitLine3"></div>
+                            <div class="suitLine suitLine4"></div>
+                          </div>
+                        </div>
+                        <div class="helmet">
+                          <div class="shieldGroup">
+                            <div class="shield"></div>
+                            <div class="glare1"></div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </li>
+                  <!-- alien -->
+                  <li>
+                    <div class="char2">
+                      <div class="imprint"></div>
+                      <div class="alien">
+                        <div class="body">
+                          <div class="arm leftArm"></div>
+                          <div class="arm rightArm"></div>
+                          <div class="foot leftFoot"></div>
+                          <div class="foot rightFoot"></div>
+                          <div class="torso"></div>
+                        </div>
+                        <div class="head">
+                          <div class="boomBoop">
+                            <div class="boom"></div>
+                            <div class="boop"></div>
+                          </div>
+                          <div class="ear leftEar"></div>
+                          <div class="ear rightEar"></div>
+                          <div class="face">
+                            <div class="eye leftEye"></div>
+                            <div class="eye rightEye"></div>
+                            <div class="mouth">
+                              <div class="lips"></div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div
+                    </div>
+                  </li>
+                  <!-- rover -->
+                  <li>
+                    <div class="char3">
+                      <div class="imprint"></div>
+                      <div class="rover">
+                        <div class="antenna"></div>
+                        <div class="body">
+                          <div class="lense"></div>
+                          <div class="main"></div>
+                          <div class="bolt"></div>
+                        </div>
+                        <div class="rig">
+                          <div class="wheel wheel1"></div>
+                          <div class="wheel wheel2"></div>
+                          <div class="wheel wheel3"></div>
+                          <div class="bracket bracket1"></div>
+                          <div class="bracket bracket2"></div>
+                          <div class="bracket bracket3"></div>
+                          <div class="bracket bracket4"></div>
+                          <div class="bracket bracket5"></div>
+                          <div class="bracket bracket6"></div>
+                          <div class="bracket bracket7"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <p class="caption">
+                Over time, these effects will cause nearby jumpers to fall into rythymic patterns based one one-anothers' bounces.
+                Notice the relationships between the jumpers: (each bounce of the astronaut is 2 bounces of the rover & every 3 bounces of the alien is 2 bounces of the astronaut).
+              </p>
+            </div>
+          </div>
+          <div class="panel col-xl-6 col-md-6 col-xs-12">
+            <div class="panelcontent" id="panelcontent4">
+              <div class="trampoline">
+                <div class="support support1"></div>
+                <div class="support support2"></div>
+                <div class="support support3"></div>
+                <div class="support support4"></div>
+                <div class="outerRing"></div>
+                <div class="surface"></div>
+                <div class="orbitSet">
+                  <div class="orbiter0"></div>
+                  <div class="orbiter1">
+                    <div class="orbitingbody"></div>
+                  </div>
+                  <div class="orbiter2">
+                    <div class="orbitingbody"></div>
+                  </div>
+                  <div class="orbiter3">
+                    <div class="orbitingbody"></div>
+                  </div>
+                </div>
+                <ul class="characters" id="characters">
+                  <!-- astronaut -->
+                  <li>
+                    <div class="char1">
+                      <div class="imprint"></div>
+                      <div class="astronaut">
+                        <div class="backpack"></div>
+                        <div class="suit">
+                          <div class="armGroup leftArmGroup">
+                            <div class="hand"></div>
+                            <div class="Arm"></div>
+                          </div>
+                          <div class="armGroup rightArmGroup">
+                            <div class="hand"></div>
+                            <div class="Arm"></div>
+                          </div>
+                          <div class="Leg leftLeg">
+                            <div class="legBend"></div>
+                            <div class="Boot leftBoot"></div>
+                          </div>
+                          <div class="Leg rightLeg">
+                            <div class="legBend"></div>
+                            <div class="Boot rightBoot"></div>
+                          </div>
+
+
+                          <div class="body">
+                            <div class="badge"></div>
+                            <div class="suitLine suitLine1"></div>
+                            <div class="suitLine suitLine2"></div>
+                            <div class="suitLine suitLine3"></div>
+                            <div class="suitLine suitLine4"></div>
+                          </div>
+                        </div>
+                        <div class="helmet">
+                          <div class="shieldGroup">
+                            <div class="shield"></div>
+                            <div class="glare1"></div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </li>
+                  <!-- alien -->
+                  <li>
+                    <div class="char2">
+                      <div class="imprint"></div>
+                      <div class="alien">
+                        <div class="body">
+                          <div class="arm leftArm"></div>
+                          <div class="arm rightArm"></div>
+                          <div class="foot leftFoot"></div>
+                          <div class="foot rightFoot"></div>
+                          <div class="torso"></div>
+                        </div>
+                        <div class="head">
+                          <div class="boomBoop">
+                            <div class="boom"></div>
+                            <div class="boop"></div>
+                          </div>
+                          <div class="ear leftEar"></div>
+                          <div class="ear rightEar"></div>
+                          <div class="face">
+                            <div class="eye leftEye"></div>
+                            <div class="eye rightEye"></div>
+                            <div class="mouth">
+                              <div class="lips"></div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div
+                    </div>
+                  </li>
+                  <!-- rover -->
+                  <li>
+                    <div class="char3">
+                      <div class="imprint"></div>
+                      <div class="rover">
+                        <div class="antenna"></div>
+                        <div class="body">
+                          <div class="lense"></div>
+                          <div class="main"></div>
+                          <div class="bolt"></div>
+                        </div>
+                        <div class="rig">
+                          <div class="wheel wheel1"></div>
+                          <div class="wheel wheel2"></div>
+                          <div class="wheel wheel3"></div>
+                          <div class="bracket bracket1"></div>
+                          <div class="bracket bracket2"></div>
+                          <div class="bracket bracket3"></div>
+                          <div class="bracket bracket4"></div>
+                          <div class="bracket bracket5"></div>
+                          <div class="bracket bracket6"></div>
+                          <div class="bracket bracket7"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <p class="caption">
+                Orbiting bodies (like planets or moons) behave similarly when they are close enough for their respective gravities to affect one another.
+                Much like the jumpers on the trampoline, over time these bodies often fall into nice patterns that result in some beautiful patterns.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="closeInfographicButton" id="closeInfographic">
+          <div class="closeInfographicText">
+            <a class="closeInfographicAction" id="closeInfographicAction">
+              <i class="fa fa-chevron-up"></i>
+            </a>
+          </div>
+        </div>
+        <!--
+        <p>
+          The physics principle behind orbital resonance is similar in concept to pushing a child on a swing, where the orbit and the swing both have a natural frequency, and the other body doing the "pushing" will act in periodic repetition to have a cumulative effect on the motion...
+          <a href="https://en.wikipedia.org/wiki/Orbital_resonance" target="_blank">Read More on Wikipedia</a>
+        </p>
+        -->
+
+      </div>
+    </div>
+    <!-- Content Section -->
+    <div class="container" id="contentContainer">
+      <div class="leadTextBox">
+        <h1>
+          Here are a few of the known examples of this phenomenon...
+        </h1>
+        <p>
+          Who knows how many examples there might be throughout the universe, but for now, enjoy the beautiful patterns made from these.
+        </p>
+      </div>
+
+    </div>
+    <!-- Footer Section -->
+    <div class="container-fluid" id="footerContainer">
+      <div id="footerContent">
+        <ul class="socialbtns">
+          <li><a href="#" class="fa fa-lg fa-facebook"></a></li>
+          <li><a href="#" class="fa fa-lg fa-twitter"></a></li>
+          <li><a href="#" class="fa fa-lg fa-github"></a></li>
+          <li><a href="#" class="fa fa-lg fa-pinterest"></a></li>
+          <li><a href="#" class="fa fa-lg">E</a></li>
+          <li><a href="#" class="fa fa-lg fa-reddit-alien"></a></li>
+          <li><a href="#" class="fa fa-lg fa-instagram"></a></li>
+          <li><a href="#" class="fa fa-lg fa-dribbble"></a></li>
+          <li><a href="#" class="fa fa-lg fa-youtube"></a></li>
+        </ul>
+        <p class="authorCred">a <a href="http://www.mattdzugan.com/">Matt Dzugan</a> project</p>
+      </div>
+      <!-- cite my sources (wikipedia & d3) -->
+      <!-- Including an Nth panel that acts as an ad for the Etsy site -->
+      <!-- social media "share" -->
+      <!-- social media "follow" -->
+
+    </div>
+    <script src="js/pagenav.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-90266121-3', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

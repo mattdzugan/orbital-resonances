@@ -1,0 +1,1877 @@
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * *                             * * * * * * * * * * * * */
+/* * * * * * * * * * * *   Header Button Animation   * * * * * * * * * * * * */
+/* * * * * * * * * * * *                             * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+.learnMoreContainer{
+  border: 0px solid red;
+  margin-top: 60px;
+  margin-left: auto; margin-right: auto;
+  margin-bottom: 20px;
+  width: 80px;
+  position: relative;
+}
+.learnMoreButton{
+  width: 100%;
+  height: 0px;
+  margin-top: 0px;
+}
+.planetoid{
+  border-width: 2px;
+  border-style: solid;
+  border-color: #f0f5f9;
+  border-radius: 100%;
+  background-color: #f0f5f9;
+  width: 10px;
+  height: 10px;
+  left: 35px;
+  position: absolute;
+
+  -moz-animation: headerButtonBounce 1.0s infinite -12s;
+  -webkit-animation: headerButtonBounce 1.0s infinite -12s;
+  animation: headerButtonBounce 1.0s infinite -12s;
+}
+.bouncysurface{
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent transparent #f0f5f9 transparent;
+  border-radius: 0%;
+  width: 80px;
+  height: 0px;
+  position: absolute;
+  bottom: 31px;
+
+  -moz-animation: headerButtonSurface 1.0s infinite -12s;
+  -webkit-animation: headerButtonSurface 1.0s infinite -12s;
+  animation: headerButtonSurface 1.0s infinite -12s;
+}
+@keyframes headerButtonSurface {
+  0%, 100% {
+    /* ease out (cubic) */
+    height:26px;
+    width: 94px;
+    border-radius: 100%;
+    -moz-transform: translate(-7px,6px);
+    -ms-transform: translate(-7px,6px);
+    -webkit-transform: translate(-7px,6px);
+    transform: translate(-7px,6px);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  25%, 50%, 88% {
+    /* ease in (cubic) */
+    height:00px;
+    width: 80px;
+    border-radius: 0%;
+    -moz-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+}
+@keyframes headerButtonBounce {
+  0%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    /* ease out (cubic) */
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  50% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+    /* ease in (cubic) */
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+}
+.learnMoreText{
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent #f0f5f9 #f0f5f9 #f0f5f9;
+  border-radius: 2px;
+}
+.learnMoreText p{
+  font-weight: 400;
+  margin-top: 5px;
+  margin-bottom: 4px;
+  letter-spacing: 1px;
+  color: #f0f5f9;
+}
+.closeInfographicButton{
+  margin-top: 20px;
+  height: 0px;
+  opacity: 0;
+  overflow: hidden;
+}
+.closeInfographicAction{
+  cursor: pointer;
+}
+.closeInfographicText{
+  color: #f0f5f9;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * *                             * * * * * * * * * * * * */
+/* * * * * * * * * * * *    Spinning Cog Animation   * * * * * * * * * * * * */
+/* * * * * * * * * * * *                             * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.spiroTile_settings{
+  -moz-animation: spinTheCogs 100s infinite -100s;
+  -webkit-animation: spinTheCogs 100s infinite -100s;
+  animation: spinTheCogs 100s infinite -100s;
+}
+@keyframes spinTheCogs {
+  48.25%, 49.75%, 98.25%, 99.75%{
+    font-size: 1.66666667em;
+  }
+  0%, 48%, 100% {
+    font-size: 1.33333333em;
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50%, 98% {
+    font-size: 1.33333333em;
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * *                             * * * * * * * * * * * * */
+/* * * * * * * * * * * *     Instructional Panels    * * * * * * * * * * * * */
+/* * * * * * * * * * * *                             * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.panel{
+  padding-left: 12px;
+  padding-right: 12px;
+  opacity: 0;
+  overflow: visible;
+  margin-bottom: 30px;
+}
+.panelcontent{
+  height: 100%;
+  position: relative;
+  text-align: center;
+  overflow: visible;
+  border: 2px solid rgba(201,214,222,0.25);
+}
+.caption{
+  text-align: left;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  margin-bottom: 0px;
+  font-size: 12px;
+  background-color: rgba(30,32,34,0.75);
+  border-radius: 2px;
+  line-height: 1.6;
+  padding: 3px 5px;
+  z-index: 10;
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * *    Trampoline Common Divs   * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.trampoline{
+  position: relative;
+  border: 0px solid red;
+  width: 400px;
+  height: 300px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.trampoline .support{
+  position: absolute;
+  width: 12px;
+  height: 40px;
+  border-radius: 4px;
+  border: 2px solid rgba(201,214,222,0.25);
+}
+
+.trampoline .support1{
+  top: 226px;
+  left: 0px;
+}
+.trampoline .support2{
+  top: 258px;
+  left: 100px;
+}
+.trampoline .support3{
+  top: 258px;
+  left: 288px;
+}
+.trampoline .support4{
+  top: 226px;
+  left: 388px;
+}
+
+.trampoline .surface{
+  position: absolute;
+  top: 200px;
+  left: 10px;
+  width: 380px;
+  height: 60px;
+  border-radius: 100%;
+  border: 2px solid rgba(201,214,222,0.25);
+  background: #52616a;
+}
+.trampoline .outerRing{
+  position: absolute;
+  top: 195px;
+  left: 0px;
+  width: 400px;
+  height: 70px;
+  border-radius: 100%;
+  border: 2px solid rgba(201,214,222,0.25);
+  background: #52616a;
+}
+
+
+.characters {
+  position: absolute;
+  list-style:none;
+  margin: 0;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  border: 0px solid yellow;
+  text-align: center;
+  width: 400px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.characters li {
+   display:inline-block;
+   vertical-align:bottom;
+   text-align:center;
+   width:110px;
+   list-style:none;
+   margin:0 auto;
+   border: 0px solid red;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * *                             * * * * * * * * * * * * */
+/* * * * * * * * * * * *      Static Characters      * * * * * * * * * * * * */
+/* * * * * * * * * * * *                             * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * *          Astronaut          * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.astronaut {
+  display:inline-block;
+  width:64px;
+  height:136px;
+  padding:0px;
+  border: 0px solid red;
+  text-align:center;
+  position: relative;
+}
+
+.astronaut .backpack{
+  width:60px; height:65px;
+  border-radius:4px;
+  border: 2px solid #c9d6de;
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  z-index: 5;
+}
+
+.astronaut .suit{
+  width:64px; height:94px;
+  border: 0px solid orange;
+  position: absolute;
+  top: 42px;
+  z-index: 5;
+}
+.astronaut .suit .Arm{
+  width:16px; height:42px;
+  border: 2px solid #c9d6de;
+  background: #52616a;
+    position: absolute;
+  top: 1px;
+  border-radius:10px 10px 0px 0px;
+}
+.astronaut .suit .armGroup{
+  position: absolute;
+  width:16px; height:56px;
+}
+.astronaut .leftArmGroup{
+  left: 0px;
+}
+.astronaut .rightArmGroup{
+  right: 0px;
+}
+
+.astronaut .suit .armGroup .hand{
+  width:16px; height:16px;
+  position: absolute;
+  top: 34px;
+  border: 2px solid #c9d6de;
+  border-radius: 16px;
+  z-index; 0;
+}
+
+.astronaut .body{
+  width:46px; height:52px;
+  border: 2px solid #c9d6de;
+  background: #52616a;
+  position: absolute;
+  top: 0px;
+  left: 9px;
+  border-radius: 2px;
+}
+.astronaut .body .badge{
+  width:8px; height:8px;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  border:solid 2px #c9d6de;
+  border-radius: 4px;
+}
+.astronaut .body .suitLine{
+  width:46px; height:6px;
+  position: absolute;
+  left: -2px;
+  border:solid 2px #c9d6de;
+  border-color:#c9d6de #c9d6de transparent #c9d6de;
+  border-radius: 80%/6px 6px 0 0;
+}
+.astronaut .body .suitLine1{
+  top: 16px;
+}
+.astronaut .body .suitLine2{
+  top: 23px;
+}
+.astronaut .body .suitLine3{
+  top: 30px;
+}
+.astronaut .body .suitLine4{
+  top: 37px;
+}
+
+.astronaut .Leg{
+  width:21px; height:44px;
+  border: 2px solid #c9d6de;
+  background: #52616a;
+    position: absolute;
+  top: 50px;
+  border-radius:1px;
+}
+.astronaut .leftLeg{
+  left: 9px;
+}
+.astronaut .rightLeg{
+  left: 34px;
+}
+
+.astronaut .Leg .legBend{
+  width:12px; height:5px;
+  position: absolute;
+  bottom: 18px;
+  left: 2.5px;
+  border:solid 2px #c9d6de;
+  border-color:transparent transparent #c9d6de transparent;
+  border-radius: 0px 0px 10px 10px;
+}
+
+
+.astronaut .Boot{
+  width:21px; height:10px;
+  position: absolute;
+  bottom: -2px;
+  left: -2px;
+  border:solid 2px #c9d6de;
+  border-radius: 10px 10px 0 0;
+}
+
+.astronaut .shieldGroup{
+  position: relative;
+}
+.astronaut .shield{
+  position: absolute;
+  top:6px;
+  left:6px;
+
+  width: 34px;
+  height: 34px;
+
+  border-radius:  75% 18%;
+  transform: rotate(45deg);
+  border: 2px solid #c9d6de;
+}
+/* */
+.astronaut .glare1{
+  position: absolute;
+  top:11px;
+  left:11px;
+
+  width: 16px;
+  height: 20px;
+
+  border-radius:  100% 18%;
+  transform: rotate(45deg);
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent transparent transparent #c9d6de;
+}
+/* */
+
+.astronaut .helmet{
+  position: absolute;
+  width:50px;
+  height:50px;
+  margin-left: 7px;
+  border-radius:25px;
+  border: 2px solid #c9d6de;
+  background: #52616a;
+  z-index: 10;
+}
+
+.char1{
+  position: relative;
+}
+.char1 .imprint{
+  width:100px; height:30px;
+  position: absolute;
+  top: 130px;
+  left: 4px;
+  border:solid 2px rgba(201,214,222,0.25);;
+  border-color:  transparent transparent rgba(201,214,222,0.25); transparent;
+  border-radius: 50%;
+}
+.bigImprint{
+  width:200px; height:30px;
+  position: absolute;
+  top: 230px;
+  left: 100px;
+  border:solid 2px rgba(201,214,222,0.75);;
+  border-color:  transparent transparent rgba(201,214,222,0.75); transparent;
+  border-radius: 50%;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * *            Alien            * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.alien {
+  display:inline-block;
+  width:64px;
+  margin-top:46px;
+  height:90px;
+  padding:0px;
+  border: 0px solid red;
+  text-align:center;
+  position: relative;
+}
+
+.alien .head{
+  width:64px; height:54px;
+  position: absolute;
+  top: 0px;
+  z-index: 5;
+}
+.alien .face{
+  width:56px; height:40px;
+  border: 2px solid #c9d6de;
+  background: #52616a;
+  position: absolute;
+  bottom: 0px;
+  left: 4px;
+  border-radius:100%;
+  z-index: 5;
+}
+.alien .boom{
+  width:18px; height:20px;
+  border-width: 2px;
+  border-style: solid;
+  border-color:  #c9d6de transparent transparent #c9d6de  ;
+  position: absolute;
+  top: 0px;
+  left: 32px;
+  border-radius:2px;
+  z-index: 5;
+  transform: rotate(15deg);
+}
+.alien .boop{
+  width:12px; height:12px;
+  border: 2px solid #c9d6de;
+  position: absolute;
+  background: #52616a;
+  top: 0px;
+  right: 6px;
+  border-radius:100%;
+  z-index: 5;
+}
+
+.alien .head .ear{
+  width:14px; height:14px;
+  border: 2px solid #c9d6de;
+  position: absolute;
+  background: #52616a;
+  top: 18px;
+  border-radius:100%;
+  z-index: 5;
+}
+.alien .head .leftEar{
+  left: 0px;
+}
+.alien .head .rightEar{
+  right: 0px;
+}
+
+.alien .head .face .eye{
+  width:9px; height:9px;
+  border: 2px solid #c9d6de;
+  position: absolute;
+  background: #52616a;
+  top: 9px;
+  border-radius:100%;
+  z-index: 5;
+}
+.alien .head .face .leftEye{
+  left: 11px;
+}
+.alien .head .face .rightEye{
+  right: 11px;
+}
+.alien .head .face .mouth{
+  position: absolute;
+  bottom: 7px;
+}
+.alien .head .face .mouth .lips{
+  width:28px; height:18px;
+  position: absolute;
+  bottom: 0px;
+  left: 12px;
+  border:solid 2px #c9d6de;
+  border-color:transparent transparent #c9d6de transparent;
+  border-radius: 100%;
+}
+
+.alien .body{
+  width: 64px; height:60px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.alien .body .torso{
+  width:30px; height:50px;
+  position: absolute;
+  bottom: 0px;
+  left: 17px;
+  border:solid 2px #c9d6de;
+  background: #52616a;
+  border-radius: 100% 100% 96% 96%;
+}
+
+.alien .body .arm{
+  width:22px; height:27px;
+  position: absolute;
+  background: #52616a;
+  border:solid 2px #c9d6de;
+  border-radius: 100%;
+}
+.alien .body .leftArm{
+  top: 24px;
+  left: 10px;
+}
+.alien .body .rightArm{
+  top: 24px;
+  right: 10px;
+}
+
+.alien .body .foot{
+  width:18px; height:8px;
+  position: absolute;
+  bottom: 0px;
+  border:solid 2px #c9d6de;
+  border-radius: 8px 8px 3px 3px;
+}
+.alien .body .leftFoot{
+  left: 14px;
+}
+.alien .body .rightFoot{
+  right: 14px;
+}
+
+.char2{
+  position: relative;
+}
+.char2 .imprint{
+  width:100px; height:30px;
+  position: absolute;
+  top: 130px;
+  left: 4px;
+  border:solid 2px rgba(201,214,222,0.25);;
+  border-color:  transparent transparent rgba(201,214,222,0.25); transparent;
+  border-radius: 50%;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * *            Rover            * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.rover {
+  display:inline-block;
+  width:64px;
+  margin-top:46px;
+  height:78px;
+  padding:0px;
+  text-align:center;
+  position: relative;
+}
+.rover .antenna{
+  width:0px; height:38px;
+  position: absolute;
+  top: 0px;
+  right: 4px;
+  border: 2px solid;
+  border-color: transparent #c9d6de transparent transparent ;
+}
+.rover .body{
+  width:64px; height:26px;
+  position: absolute;
+  top: 36px;
+  border: 0px solid green;
+}
+.rover .body .lense{
+  width:12px; height:12px;
+  position: absolute;
+  top: 7px;
+  left: 0px;
+  border:solid 2px #c9d6de;
+  border-radius: 2px;
+}
+.rover .body .main{
+  width:58px; height:26px;
+  position: absolute;
+  top: 0px;
+  left: 6px;
+  border:solid 2px #c9d6de;
+  border-radius: 2px;
+  background: #52616a;
+}
+.rover .body .bolt{
+  width:12px; height:12px;
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  border:solid 2px #c9d6de;
+  border-radius: 2px;
+  background: #52616a;
+  border-radius: 6px;
+}
+.rover .rig{
+  width:64px; height:35px;
+  position: absolute;
+  bottom: 0px;
+}
+.rover .rig .wheel{
+  width:14px; height:14px;
+  position: absolute;
+  bottom: 0px;
+  border:solid 2px #c9d6de;
+  border-radius: 7px 7px 7px 7px;
+}
+.rover .rig .wheel1{
+  left: 7px;
+}
+.rover .rig .wheel2{
+  left: 29px;
+}
+.rover .rig .wheel3{
+  right: 0px;
+}
+
+.rover .bracket1{
+  width:0px; height:17px;
+  position: absolute;
+  top: 13px;
+  left: 10px;
+  border: 2px solid;
+  border-color: transparent #c9d6de transparent transparent ;
+  border-radius: 2px;
+}
+.rover .bracket2{
+  width:0px; height:18px;
+  position: absolute;
+  top: 12px;
+  left: 34px;
+  border: 2px solid;
+  transform: rotate(10deg);
+  border-color: transparent #c9d6de transparent transparent ;
+  border-radius: 2px;
+}
+.rover .bracket3{
+  width:0px; height:18px;
+  position: absolute;
+  top: 12px;
+  left: 52px;
+  border: 2px solid;
+  transform: rotate(-10deg);
+  border-color: transparent #c9d6de transparent transparent;
+  border-radius: 2px;
+}
+.rover .bracket4{
+  width:18px; height:0px;
+  position: absolute;
+  top: 13px;
+  left: 37px;
+  border: 2px solid;
+  border-color: #c9d6de transparent transparent transparent ;
+  border-radius: 2px;
+}
+.rover .bracket5{
+  width:15px; height:0px;
+  position: absolute;
+  transform: rotate(10deg);
+  top: 5px;
+  left: 19px;
+  border: 2px solid;
+  border-color: #c9d6de transparent transparent transparent ;
+  border-radius: 2px;
+}
+.rover .bracket6{
+  width:20px; height:0px;
+  position: absolute;
+  transform: rotate(25deg);
+  top: 10px;
+  left: 29px;
+  border: 2px solid;
+  border-color: #c9d6de transparent transparent transparent ;
+  border-radius: 2px;
+}
+.rover .bracket7{
+  width:16px; height:0px;
+  position: absolute;
+  transform: rotate(-55deg);
+  top: 9px;
+  left: 10px;
+  border: 2px solid;
+  border-color: #c9d6de transparent transparent transparent ;
+  border-radius: 2px;
+}
+
+.char3{
+  position: relative;
+}
+.char3 .imprint{
+  width:100px; height:30px;
+  position: absolute;
+  top: 118px;
+  left: 4px;
+  border:solid 2px rgba(201,214,222,0.25);;
+  border-color:  transparent transparent rgba(201,214,222,0.25); transparent;
+  border-radius: 50%;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * *          OrbitSet           * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.orbitSet{
+  position: absolute;
+  width:80px;
+  height:80px;
+  top: 0px;
+  left: 160px;
+  border: 0px solid red;
+}
+.orbiter0{
+  position: absolute;
+  width:8px;
+  height:8px;
+  top: 36px;
+  left: 36px;
+  border-radius: 50%;
+  background-color: #c9d6de;
+}
+.orbiter1{
+  position: absolute;
+  width:70px;
+  height:70px;
+  top: 5px;
+  left: 5px;
+  border-radius: 50%;
+  border: 1px solid #c9d6de;
+}
+.orbiter2{
+  position: absolute;
+  width:50px;
+  height:50px;
+  top: 15px;
+  left: 15px;
+  border-radius: 50%;
+  border: 1px solid #c9d6de;
+}
+.orbiter3{
+  position: absolute;
+  width:30px;
+  height:30px;
+  top: 25px;
+  left: 25px;
+  border-radius: 50%;
+  border: 1px solid #c9d6de;
+}
+
+.orbitingbody{
+  position: absolute;
+  width:8px;
+  height:8px;
+  bottom: -4px;
+  border-radius: 50%;
+  /* border: 1px solid #c9d6de; */
+  background-color: #c9d6de
+}
+.orbiter1 .orbitingbody{
+  left: 30px;
+}
+.orbiter2 .orbitingbody{
+  left: 20px;
+}
+.orbiter3 .orbitingbody{
+  left: 10px;
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * *                             * * * * * * * * * * * * */
+/* * * * * * * * * * * *     Dynamic Characters      * * * * * * * * * * * * */
+/* * * * * * * * * * * *                             * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * *                             * * * * * * * * * * * * */
+/* * * * * * * * * * * *    Apply the Animations     * * * * * * * * * * * * */
+/* * * * * * * * * * * *                             * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * *          Panel 1            * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+#panelcontent1 .characters li {
+   width:90px;
+   margin-left: 20px;
+   margin-right: 20px;
+}
+#panelcontent1 .astronaut {
+  -moz-animation: astronautJump 1.0812s infinite -6.6837s;
+  -webkit-animation: astronautJump 1.0812s infinite -6.6837s;
+  animation: astronautJump 1.0812sinfinite -6.6837s;
+}
+#panelcontent1 .astronaut .leftArmGroup{
+  -moz-animation: astronautWaveL 1.0812s infinite -6.6837s;
+  -webkit-animation: astronautWaveL 1.0812s infinite -6.6837s;
+  animation: astronautWaveL  1.0812s infinite -6.6837s;
+}
+#panelcontent1 .astronaut .rightArmGroup{
+  -moz-animation: astronautWaveR 1.0812s infinite -6.6837s;
+  -webkit-animation: astronautWaveR 1.0812s infinite -6.6837s;
+  animation: astronautWaveR 1.0812s infinite -6.6837s;
+}
+#panelcontent1 .astronaut .Leg{
+  -moz-animation: astronautTremble 1.0812s infinite -6.6837s;
+  -webkit-animation: astronautTremble 1.0812s infinite -6.6837s;
+  animation: astronautTremble 1.0812s infinite -6.6837s;
+  animation-timing-function: cubic-bezier(.36,.07,.19,.97);
+}
+#panelcontent1 .astronaut .shieldGroup{
+  -moz-animation: astronautLook 1.0812s infinite -6.6837s;
+  -webkit-animation: astronautLook 1.0812s infinite -6.6837s;
+  animation: astronautLook 1.0812s infinite -6.6837s;
+}
+#panelcontent1 .char1 .imprint{
+  -moz-animation: astronautImprint 1.0812s infinite -6.6837s;
+  -webkit-animation: astronautImprint 1.0812s infinite -6.6837s;
+  animation: astronautImprint 1.0812s infinite -6.6837s;
+}
+
+
+#panelcontent1 .alien {
+  -moz-animation: alienJump 1.0629s infinite -6.9709s;
+  -webkit-animation: alienJump 1.0629s infinite -6.9709s;
+  animation: alienJump 1.0629s infinite -6.9709s;
+}
+#panelcontent1 .alien .boomBoop{
+  -moz-animation: alienBoomWobble 1.0629s infinite -6.9709s;
+  -webkit-animation: alienBoomWobble 1.0629s infinite -6.9709s;
+  animation: alienBoomWobble 1.0629s infinite -6.9709s;
+}
+#panelcontent1 .alien .head .ear{
+  -moz-animation: alienHeadTilt 1.0629s infinite -6.9709s;
+  -webkit-animation: alienHeadTilt 1.0629s infinite -6.9709s;
+  animation: alienHeadTilt 1.0629s infinite -6.9709s;
+}
+#panelcontent1 .alien .head .face .eye{
+  -moz-animation: alienLookUp 1.0629s infinite -6.9709s;
+  -webkit-animation: alienLookUp 1.0629s infinite -6.9709s;
+  animation: alienLookUp 1.0629s infinite -6.9709s;
+}
+#panelcontent1 .alien .head .face .mouth{
+  -moz-animation: alienLookUp 1.0629s infinite -6.9709s;
+  -webkit-animation: alienLookUp 1.0629s infinite -6.9709s;
+  animation: alienLookUp 1.0629s infinite -6.9709s;
+}
+#panelcontent1 .alien .head .face .mouth .lips{
+  -moz-animation: alienPurse 1.0629s infinite -6.9709s;
+  -webkit-animation: alienPurse 1.0629s infinite -6.9709s;
+  animation: alienPurse 1.0629s infinite -6.9709s;
+}
+#panelcontent1 .alien .body .leftFoot{
+  -moz-animation: alienKickL 1.0629s infinite -6.9709s;
+  -webkit-animation: alienKickL 1.0629s infinite -6.9709s;
+  animation: alienKickL 1.0629s infinite -6.9709s;
+}
+#panelcontent1 .alien .body .rightFoot{
+  -moz-animation: alienKickR 1.0629s infinite -6.9709s;
+  -webkit-animation: alienKickR 1.0629s infinite -6.9709s;
+  animation: alienKickR 1.0629s infinite -6.9709s;
+}
+#panelcontent1 .char2 .imprint{
+  -moz-animation: alienImprint 1.0629s infinite -6.9709s;
+  -webkit-animation: alienImprint 1.0629s infinite -6.9709s;
+  animation: alienImprint 1.0629s infinite -6.9709s;
+}
+
+
+#panelcontent1 .rover {
+  -moz-animation: roverJump 0.9254s infinite -6.0903s;
+  -webkit-animation: roverJump 0.9254s infinite -6.0903s;
+  animation: roverJump 0.9254s infinite -6.0903s;
+}
+#panelcontent1 .rover .antenna{
+  -moz-animation: roverWave 0.9254s infinite -6.0903s;
+  -webkit-animation: roverWave 0.9254s infinite -6.0903s;
+  animation: roverWave 0.9254s infinite -6.0903s;
+}
+#panelcontent1 .rover .rig .wheel{
+  -moz-animation: roverSquish 0.9254s infinite -6.0903s;
+  -webkit-animation: roverSquish 0.9254s infinite -6.0903s;
+  animation: roverSquish 0.9254s infinite -6.0903s;
+}
+#panelcontent1 .char3 .imprint{
+  -moz-animation: roverImprint 0.9254s infinite -6.0903s;
+  -webkit-animation: roverImprint 0.9254s infinite -6.0903s;
+  animation: roverImprint 0.9254s infinite -6.0903s;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * *          Panel 2            * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+#panelcontent2 .characters li {
+   width:90px;
+   margin-left: 0px;
+   margin-right: 0px;
+}
+#panelcontent2 .astronaut {
+  -moz-animation: astronautJump2 6s infinite -15s;
+  -webkit-animation: astronautJump2 6s infinite -15s;
+  animation: astronautJump2 6s infinite -15s;
+}
+#panelcontent2 .astronaut .leftArmGroup{
+  -moz-animation: astronautWaveL 1.2s infinite -15s;
+  -webkit-animation: astronautWaveL 1.2s infinite -15s;
+  animation: astronautWaveL  1.2s infinite -15s;
+}
+#panelcontent2 .astronaut .rightArmGroup{
+  -moz-animation: astronautWaveR 1.2s infinite -15s;
+  -webkit-animation: astronautWaveR 1.2s infinite -15s;
+  animation: astronautWaveR 1.2s infinite -15s;
+}
+#panelcontent2 .astronaut .Leg{
+  -moz-animation: astronautTremble 1.2s infinite -15s;
+  -webkit-animation: astronautTremble 1.2s infinite -15s;
+  animation: astronautTremble 1.2s infinite -15s;
+  animation-timing-function: cubic-bezier(.36,.07,.19,.97);
+}
+#panelcontent2 .astronaut .shieldGroup{
+  -moz-animation: astronautLook 1.2s infinite -15s;
+  -webkit-animation: astronautLook 1.2s infinite -15s;
+  animation: astronautLook 1.2s infinite -15s;
+}
+#panelcontent2 .char1 .imprint{
+  -moz-animation: astronautImprint 1.2s infinite -15s;
+  -webkit-animation: astronautImprint 1.2s infinite -15s;
+  animation: astronautImprint 1.2s infinite -15s;
+}
+#panelcontent2 .bigImprint{
+  -moz-animation: bigImprint 6s infinite -15s;
+  -webkit-animation: bigImprint 6s infinite -15s;
+  animation: bigImprint 6s infinite -15s;
+}
+
+
+#panelcontent2 .alien {
+  -moz-animation: alienJump2 6.0s infinite -15s;
+  -webkit-animation: alienJump2 6.0s infinite -15s;
+  animation: alienJump2 6.0s infinite -15s;
+}
+#panelcontent2 .alien .boomBoop{
+  -moz-animation: alienBoomWobble 1.0s infinite -15s;
+  -webkit-animation: alienBoomWobble 1.0s infinite -15s;
+  animation: alienBoomWobble 1.0s infinite -15s;
+}
+#panelcontent2 .alien .head .ear{
+  -moz-animation: alienHeadTilt 1.0s infinite -15s;
+  -webkit-animation: alienHeadTilt 1.0s infinite -15s;
+  animation: alienHeadTilt 1.0s infinite -15s;
+}
+#panelcontent2 .alien .head .face .eye{
+  -moz-animation: alienLookUp 1.0s infinite -15s;
+  -webkit-animation: alienLookUp 1.0s infinite -15s;
+  animation: alienLookUp 1.0s infinite -15s;
+}
+#panelcontent2 .alien .head .face .mouth{
+  -moz-animation: alienLookUp 1.0s infinite -15s;
+  -webkit-animation: alienLookUp 1.0s infinite -15s;
+  animation: alienLookUp 1.0s infinite -15s;
+}
+#panelcontent2 .alien .head .face .mouth .lips{
+  -moz-animation: alienPurse 1.0s infinite -15s;
+  -webkit-animation: alienPurse 1.0s infinite -15s;
+  animation: alienPurse 1.0s infinite -15s;
+}
+#panelcontent2 .alien .body .leftFoot{
+  -moz-animation: alienKickL 1.0s infinite -15s;
+  -webkit-animation: alienKickL 1.0s infinite -15s;
+  animation: alienKickL 1.0s infinite -15s;
+}
+#panelcontent2 .alien .body .rightFoot{
+  -moz-animation: alienKickR 1.0s infinite -15s;
+  -webkit-animation: alienKickR 1.0s infinite -15s;
+  animation: alienKickR 1.0s infinite -15s;
+}
+#panelcontent2 .char2 .imprint{
+  -moz-animation: alienImprint 1.0s infinite -15s;
+  -webkit-animation: alienImprint 1.0s infinite -15s;
+  animation: alienImprint 1.0s infinite -15s;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * *          Panel 3            * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+#panelcontent3 .characters li {
+   width:90px;
+   margin-left: 5px;
+   margin-right: 5px;
+}
+#panelcontent3 .astronaut {
+  -moz-animation: astronautJump 1.2s infinite -12s;
+  -webkit-animation: astronautJump 1.2s infinite -12s;
+  animation: astronautJump 1.2s infinite -12s;
+}
+#panelcontent3 .astronaut .leftArmGroup{
+  -moz-animation: astronautWaveL 1.2s infinite -12s;
+  -webkit-animation: astronautWaveL 1.2s infinite -12s;
+  animation: astronautWaveL  1.2s infinite -12s;
+}
+#panelcontent3 .astronaut .rightArmGroup{
+  -moz-animation: astronautWaveR 1.2s infinite -12s;
+  -webkit-animation: astronautWaveR 1.2s infinite -12s;
+  animation: astronautWaveR 1.2s infinite -12s;
+}
+#panelcontent3 .astronaut .Leg{
+  -moz-animation: astronautTremble 1.2s infinite -12s;
+  -webkit-animation: astronautTremble 1.2s infinite -12s;
+  animation: astronautTremble 1.2s infinite -12s;
+  animation-timing-function: cubic-bezier(.36,.07,.19,.97);
+}
+#panelcontent3 .astronaut .shieldGroup{
+  -moz-animation: astronautLook 1.2s infinite -12s;
+  -webkit-animation: astronautLook 1.2s infinite -12s;
+  animation: astronautLook 1.2s infinite -12s;
+}
+#panelcontent3 .char1 .imprint{
+  -moz-animation: astronautImprint 1.2s infinite -12s;
+  -webkit-animation: astronautImprint 1.2s infinite -12s;
+  animation: astronautImprint 1.2s infinite -12s;
+}
+
+
+#panelcontent3 .alien {
+  -moz-animation: alienJump 0.9s infinite -12s;
+  -webkit-animation: alienJump 0.9s infinite -12s;
+  animation: alienJump 0.9s infinite -12s;
+}
+#panelcontent3 .alien .boomBoop{
+  -moz-animation: alienBoomWobble 0.9s infinite -12s;
+  -webkit-animation: alienBoomWobble 0.9s infinite -12s;
+  animation: alienBoomWobble 0.9s infinite -12s;
+}
+#panelcontent3 .alien .head .ear{
+  -moz-animation: alienHeadTilt 0.9s infinite -12s;
+  -webkit-animation: alienHeadTilt 0.9s infinite -12s;
+  animation: alienHeadTilt 0.9s infinite -12s;
+}
+#panelcontent3 .alien .head .face .eye{
+  -moz-animation: alienLookUp 0.9s infinite -12s;
+  -webkit-animation: alienLookUp 0.9s infinite -12s;
+  animation: alienLookUp 0.9s infinite -12s;
+}
+#panelcontent3 .alien .head .face .mouth{
+  -moz-animation: alienLookUp 0.9s infinite -12s;
+  -webkit-animation: alienLookUp 0.9s infinite -12s;
+  animation: alienLookUp 0.9s infinite -12s;
+}
+#panelcontent3 .alien .head .face .mouth .lips{
+  -moz-animation: alienPurse 0.9s infinite -12s;
+  -webkit-animation: alienPurse 0.9s infinite -12s;
+  animation: alienPurse 0.9s infinite -12s;
+}
+#panelcontent3 .alien .body .leftFoot{
+  -moz-animation: alienKickL 0.9s infinite -12s;
+  -webkit-animation: alienKickL 0.9s infinite -12s;
+  animation: alienKickL 0.9s infinite -12s;
+}
+#panelcontent3 .alien .body .rightFoot{
+  -moz-animation: alienKickR 0.9s infinite -12s;
+  -webkit-animation: alienKickR 0.9s infinite -12s;
+  animation: alienKickR 0.9s infinite -12s;
+}
+#panelcontent3 .char2 .imprint{
+  -moz-animation: alienImprint 0.9s infinite -12s;
+  -webkit-animation: alienImprint 0.9s infinite -12s;
+  animation: alienImprint 0.9s infinite -12s;
+}
+
+
+#panelcontent3 .rover {
+  -moz-animation: roverJump 0.6s infinite -12s;
+  -webkit-animation: roverJump 0.6s infinite -12s;
+  animation: roverJump 0.6s infinite -12s;
+}
+#panelcontent3 .rover .antenna{
+  -moz-animation: roverWave 0.6s infinite -12s;
+  -webkit-animation: roverWave 0.6s infinite -12s;
+  animation: roverWave 0.6s infinite -12s;
+}
+#panelcontent3 .rover .rig .wheel{
+  -moz-animation: roverSquish 0.6s infinite -12s;
+  -webkit-animation: roverSquish 0.6s infinite -12s;
+  animation: roverSquish 0.6s infinite -12s;
+}
+#panelcontent3 .char3 .imprint{
+  -moz-animation: roverImprint 0.6s infinite -12s;
+  -webkit-animation: roverImprint 0.6s infinite -12s;
+  animation: roverImprint 0.6s infinite -12s;
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * *          Panel 4            * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+#panelcontent4 .characters li {
+   width:90px;
+   margin-left: 5px;
+   margin-right: 5px;
+}
+
+#panelcontent4 .astronaut {
+  -moz-animation: astronautJump 1.2s infinite -12s;
+  -webkit-animation: astronautJump 1.2s infinite -12s;
+  animation: astronautJump 1.2s infinite -12s;
+}
+#panelcontent4 .astronaut .leftArmGroup{
+  -moz-animation: astronautWaveL 1.2s infinite -12s;
+  -webkit-animation: astronautWaveL 1.2s infinite -12s;
+  animation: astronautWaveL  1.2s infinite -12s;
+}
+#panelcontent4 .astronaut .rightArmGroup{
+  -moz-animation: astronautWaveR 1.2s infinite -12s;
+  -webkit-animation: astronautWaveR 1.2s infinite -12s;
+  animation: astronautWaveR 1.2s infinite -12s;
+}
+#panelcontent4 .astronaut .Leg{
+  -moz-animation: astronautTremble 1.2s infinite -12s;
+  -webkit-animation: astronautTremble 1.2s infinite -12s;
+  animation: astronautTremble 1.2s infinite -12s;
+  animation-timing-function: cubic-bezier(.36,.07,.19,.97);
+}
+#panelcontent4 .astronaut .shieldGroup{
+  -moz-animation: astronautLook 1.2s infinite -12s;
+  -webkit-animation: astronautLook 1.2s infinite -12s;
+  animation: astronautLook 1.2s infinite -12s;
+}
+#panelcontent4 .char1 .imprint{
+  -moz-animation: astronautImprint 1.2s infinite -12s;
+  -webkit-animation: astronautImprint 1.2s infinite -12s;
+  animation: astronautImprint 1.2s infinite -12s;
+}
+
+
+#panelcontent4 .alien {
+  -moz-animation: alienJump 0.9s infinite -12s;
+  -webkit-animation: alienJump 0.9s infinite -12s;
+  animation: alienJump 0.9s infinite -12s;
+}
+#panelcontent4 .alien .boomBoop{
+  -moz-animation: alienBoomWobble 0.9s infinite -12s;
+  -webkit-animation: alienBoomWobble 0.9s infinite -12s;
+  animation: alienBoomWobble 0.9s infinite -12s;
+}
+#panelcontent4 .alien .head .ear{
+  -moz-animation: alienHeadTilt 0.9s infinite -12s;
+  -webkit-animation: alienHeadTilt 0.9s infinite -12s;
+  animation: alienHeadTilt 0.9s infinite -12s;
+}
+#panelcontent4 .alien .head .face .eye{
+  -moz-animation: alienLookUp 0.9s infinite -12s;
+  -webkit-animation: alienLookUp 0.9s infinite -12s;
+  animation: alienLookUp 0.9s infinite -12s;
+}
+#panelcontent4 .alien .head .face .mouth{
+  -moz-animation: alienLookUp 0.9s infinite -12s;
+  -webkit-animation: alienLookUp 0.9s infinite -12s;
+  animation: alienLookUp 0.9s infinite -12s;
+}
+#panelcontent4 .alien .head .face .mouth .lips{
+  -moz-animation: alienPurse 0.9s infinite -12s;
+  -webkit-animation: alienPurse 0.9s infinite -12s;
+  animation: alienPurse 0.9s infinite -12s;
+}
+#panelcontent4 .alien .body .leftFoot{
+  -moz-animation: alienKickL 0.9s infinite -12s;
+  -webkit-animation: alienKickL 0.9s infinite -12s;
+  animation: alienKickL 0.9s infinite -12s;
+}
+#panelcontent4 .alien .body .rightFoot{
+  -moz-animation: alienKickR 0.9s infinite -12s;
+  -webkit-animation: alienKickR 0.9s infinite -12s;
+  animation: alienKickR 0.9s infinite -12s;
+}
+#panelcontent4 .char2 .imprint{
+  -moz-animation: alienImprint 0.9s infinite -12s;
+  -webkit-animation: alienImprint 0.9s infinite -12s;
+  animation: alienImprint 0.9s infinite -12s;
+}
+
+
+#panelcontent4 .rover {
+  -moz-animation: roverJump 0.6s infinite -12s;
+  -webkit-animation: roverJump 0.6s infinite -12s;
+  animation: roverJump 0.6s infinite -12s;
+}
+#panelcontent4 .rover .antenna{
+  -moz-animation: roverWave 0.6s infinite -12s;
+  -webkit-animation: roverWave 0.6s infinite -12s;
+  animation: roverWave 0.6s infinite -12s;
+}
+#panelcontent4 .rover .rig .wheel{
+  -moz-animation: roverSquish 0.6s infinite -12s;
+  -webkit-animation: roverSquish 0.6s infinite -12s;
+  animation: roverSquish 0.6s infinite -12s;
+}
+#panelcontent4 .char3 .imprint{
+  -moz-animation: roverImprint 0.6s infinite -12s;
+  -webkit-animation: roverImprint 0.6s infinite -12s;
+  animation: roverImprint 0.6s infinite -12s;
+}
+
+#panelcontent4 .orbiter1{
+  -moz-animation: orbiterOrbit 1.2s infinite -12s;
+  -webkit-animation: orbiterOrbit 1.2s infinite -12s;
+  animation: orbiterOrbit 1.2s infinite -12s;
+}
+#panelcontent4 .orbiter2{
+  -moz-animation: orbiterOrbit 0.9s infinite -12s;
+  -webkit-animation: orbiterOrbit 0.9s infinite -12s;
+  animation: orbiterOrbit 0.9s infinite -12s;
+}
+#panelcontent4 .orbiter3{
+  -moz-animation: orbiterOrbit 0.6s infinite -12s;
+  -webkit-animation: orbiterOrbit 0.6s infinite -12s;
+  animation: orbiterOrbit 0.6s infinite -12s;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * *                             * * * * * * * * * * * * */
+/* * * * * * * * * * * *    Define the Animations    * * * * * * * * * * * * */
+/* * * * * * * * * * * *                             * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * *          Astronaut          * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@-moz-keyframes astronautJump {
+  0%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+}
+@-webkit-keyframes astronautJump {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+}
+@keyframes astronautJump {
+  0%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    /* ease out (cubic) */
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  50% {
+    -moz-transform: translateY(-60px);
+    -ms-transform: translateY(-60px);
+    -webkit-transform: translateY(-60px);
+    transform: translateY(-60px);
+    /* ease in (cubic) */
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+}
+
+
+
+@keyframes astronautJump2 {
+  0%, 20%, 40%, 60%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    /* ease out (cubic) */
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  30%, 50%, 70%, 90% {
+    -moz-transform: translateY(-60px);
+    -ms-transform: translateY(-60px);
+    -webkit-transform: translateY(-60px);
+    transform: translateY(-60px);
+    /* ease in (cubic) */
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+  10% {
+    -moz-transform: translateY(-180px);
+    -ms-transform: translateY(-180px);
+    -webkit-transform: translateY(-180px);
+    transform: translateY(-180px);
+    /* ease in (cubic) */
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+}
+
+
+
+@keyframes astronautWaveL {
+  0%, 15%, 75%, 100% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transform-origin: 10px 5px;
+    /* ease out (cubic) */
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  40%, 60% {
+    -moz-transform: rotate(160deg);
+    -ms-transform: rotate(160deg);
+    -webkit-transform: rotate(160deg);
+    transform: rotate(160deg);
+    transform-origin: 10px 5px;
+    /* ease in (cubic) */
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+}
+@keyframes astronautWaveR {
+  0%, 15%, 75%, 100% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transform-origin: 6px 5px;
+    /* ease out (cubic) */
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  40%, 60% {
+    -moz-transform: rotate(-160deg);
+    -ms-transform: rotate(-160deg);
+    -webkit-transform: rotate(-160deg);
+    transform: rotate(-160deg);
+    transform-origin: 6px 5px;
+    /* ease in (cubic) */
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+}
+
+
+@keyframes astronautLook {
+  0%, 90%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    animation-timing-function: ease;
+  }
+  10%, 45% {
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+    animation-timing-function: ease;
+  }
+  55%, 75% {
+    -moz-transform: translateY(3px);
+    -ms-transform: translateY(3px);
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+    animation-timing-function: ease;
+  }
+}
+
+
+@keyframes astronautTremble {
+  0%, 25%, 75%, 100% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transform-origin: center top;
+  }
+  30%,  70% {
+    -moz-transform: rotate(-1deg);
+    -ms-transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+  }
+  35%, 65% {
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+  40%, 50%, 60% {
+    -moz-transform: rotate(-4deg);
+    -ms-transform: rotate(-4deg);
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+  }
+  45%, 55% {
+    -moz-transform: rotate(4deg);
+    -ms-transform: rotate(4deg);
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+}
+@keyframes astronautImprint {
+  0%, 100% {
+    /* ease out (cubic) */
+    height:30px;
+    width:80px;
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  25%, 50%, 75% {
+    /* ease in (cubic) */
+    height:00px;
+    width:40px;
+    -moz-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+}
+
+@keyframes bigImprint {
+  0%, 100% {
+    height:50px;
+    width:200px;
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    border:solid 4px rgba(201,214,222,0.75);
+    border-color:  transparent transparent rgba(201,214,222,0.75); transparent;
+  }
+  5%, 10%, 95% {
+    height:00px;
+    width:100px;
+    -moz-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    border:solid 4px rgba(201,214,222,0.001);
+    border-color:  transparent transparent rgba(201,214,222,0.001); transparent;
+  }
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * *            Alien            * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+@keyframes alienJump {
+  0%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    /* ease out (cubic) */
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  50% {
+    -moz-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    /* ease in (cubic) */
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+}
+
+@keyframes alienJump2 {
+  0%, 16.67%, 33.33%, 50%, 66.67%, 83.33%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    /* ease out (cubic) */
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  25%, 41.67%, 58.33%, 75%, 91.67% {
+    -moz-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    /* ease in (cubic) */
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+  8.33% {
+    -moz-transform: translateY(-150px);
+    -ms-transform: translateY(-150px);
+    -webkit-transform: translateY(-150px);
+    transform: translateY(-150px);
+    /* ease in (cubic) */
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+}
+
+@keyframes alienKickL {
+  0%, 25%, 75%, 100% {
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  30%,  70% {
+    -moz-transform: translateY(1px);
+    -ms-transform: translateY(1px);
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  35%, 65% {
+    -moz-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  40%, 50%, 60% {
+    -moz-transform: translateY(3px);
+    -ms-transform: translateY(3px);
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+  }
+  45%, 55% {
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -webkit-transform: translateY-3px);
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes alienKickR {
+  0%, 25%, 75%, 100% {
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  30%,  70% {
+    -moz-transform: translateY(-1px);
+    -ms-transform: translateY(-1px);
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px);
+  }
+  35%, 65% {
+    -moz-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+  }
+  40%, 50%, 60% {
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+  45%, 55% {
+    -moz-transform: translateY(3px);
+    -ms-transform: translateY(3px);
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+  }
+}
+
+@keyframes alienPurse {
+
+  0%, 70%, 100% {
+    -moz-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+
+    width:28px; height:18px;
+  }
+  50% {
+    -moz-transform: translate(8px,0);
+    -ms-transform: translate(8px,0);
+    -webkit-transform: translate(8px,0);
+    transform: translate(8px,0);
+
+    width:12px; height:0px;
+
+  }
+
+}
+
+
+@keyframes alienBoomWobble {
+  0%, 70%,  100% {
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  50% {
+    -moz-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+  }
+}
+@keyframes alienLookUp {
+  0%, 70%,  100% {
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  50% {
+    -moz-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+}
+@keyframes alienHeadTilt {
+  0%, 70%,  100% {
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  50% {
+    -moz-transform: translateY(1px);
+    -ms-transform: translateY(1px);
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+}
+@keyframes alienImprint {
+  0%, 100% {
+    /* ease out (cubic) */
+    height:30px;
+    width:80px;
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  25%, 50%, 75% {
+    /* ease in (cubic) */
+    height:00px;
+    width:40px;
+    -moz-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * *            Rover            * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+@keyframes roverJump {
+  0%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    /* ease out (cubic) */
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  50% {
+    -moz-transform: translateY(-40px);
+    -ms-transform: translateY(-40px);
+    -webkit-transform: translateY(-40px);
+    transform: translateY(-40px);
+    /* ease in (cubic) */
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+}
+@keyframes roverSquish {
+  0%,10%, 95%,100% {
+    border-radius: 7px 7px 4px 4px;
+  }
+  40%, 85% {
+    border-radius: 7px 7px 7px 7px;
+  }
+}
+@keyframes roverWave {
+  0%, 10%, 90%, 100% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transform-origin: center bottom;
+  }
+  30%,  70% {
+    -moz-transform: rotate(-1deg);
+    -ms-transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+  }
+  35%, 65% {
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+  40%, 50%, 60% {
+    -moz-transform: rotate(-4deg);
+    -ms-transform: rotate(-4deg);
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+  }
+  45%, 55% {
+    -moz-transform: rotate(4deg);
+    -ms-transform: rotate(4deg);
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+}
+@keyframes roverImprint {
+  0%, 100% {
+    /* ease out (cubic) */
+    height:30px;
+    width:80px;
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  25%, 50%, 75% {
+    /* ease in (cubic) */
+    height:00px;
+    width:40px;
+    -moz-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+}
+
+
+
+
+@keyframes orbiterOrbit {
+  0% {
+    /* ease out (cubic) */
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    animation-timing-function: linear;
+  }
+  25% {
+    /* ease out (cubic) */
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    animation-timing-function: linear;
+  }
+  50% {
+    /* ease out (cubic) */
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    animation-timing-function: linear;
+  }
+  75% {
+    /* ease out (cubic) */
+    -moz-transform: rotate(-270deg);
+    -ms-transform: rotate(-270deg);
+    -webkit-transform: rotate(-270deg);
+    transform: rotate(-270deg);
+    animation-timing-function: linear;
+  }
+  100% {
+    /* ease out (cubic) */
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+    animation-timing-function: linear;
+  }
+}

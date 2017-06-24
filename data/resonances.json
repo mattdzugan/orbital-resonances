@@ -1,0 +1,145 @@
+[
+  {
+    "index": 1,
+    "Title": "Our Sun’s two most distant planets",
+    "Primary": "Sun",
+    "Link": "https://en.wikipedia.org/wiki/Solar_System",
+    "MainColor": "#82B1FF",
+    "bodies": [
+      {
+        "Name": "Neptune",
+        "PeriodDays":  60190,
+        "PeriodInt": 2.0,
+        "SMA_km": 4.49506e9,
+        "initialAngle": 0
+      },
+      {
+        "Name": "Pluto",
+        "PeriodDays":  90553,
+        "PeriodInt": 3.0,
+        "SMA_km": 5.90638e9,
+        "initialAngle": 0
+      }
+    ]
+  },
+  {
+    "index": 2,
+    "Title": "Two of Saturn’s icy moons",
+    "Primary": "Saturn",
+    "Link": "https://en.wikipedia.org/wiki/Moons_of_Saturn",
+    "MainColor": "#87d37c",
+    "bodies": [
+      {
+        "Name": "Titan",
+        "PeriodDays":  15.945,
+        "PeriodInt": 3.0,
+        "SMA_km": 1.221870e6,
+        "initialAngle": 0
+      },
+      {
+        "Name": "Hyperion",
+        "PeriodDays":  21.276,
+        "PeriodInt": 4.0,
+        "SMA_km": 1.481009e6,
+        "initialAngle": 0
+      }
+    ]
+  },
+  {
+    "index": 3,
+    "Title": "Three of Jupiter’s Galilean moons",
+    "Primary": "Jupiter",
+    "Link": "https://en.wikipedia.org/wiki/Moons_of_Jupiter",
+    "MainColor": "#FFD180",
+    "bodies": [
+      {
+        "Name": "Io",
+        "PeriodDays":  1.7691,
+        "PeriodInt": 1.0,
+        "SMA_km": 421.700e3,
+        "initialAngle": 0
+      },
+      {
+        "Name": "Europa",
+        "PeriodDays":  3.5512,
+        "PeriodInt": 2.0,
+        "SMA_km": 671.034e3,
+        "initialAngle": 0
+      },
+      {
+        "Name": "Ganymede",
+        "PeriodDays":  7.1546,
+        "PeriodInt": 4,
+        "SMA_km": 1.070412e6,
+        "initialAngle": 90
+      }
+    ]
+  },
+  {
+    "index": 4,
+    "Title": "Three of Pluto’s small moons",
+    "Primary": "Pluto",
+    "Link": "https://en.wikipedia.org/wiki/Moons_of_Pluto",
+    "MainColor": "#B388FF",
+    "bodies": [
+      {
+        "Name": "Styx",
+        "PeriodDays":  20.16155,
+        "PeriodInt": 6.0,
+        "SMA_km": 42.656e3,
+        "initialAngle": 0
+      },
+      {
+        "Name": "Nix",
+        "PeriodDays":  24.85463,
+        "PeriodInt": 9.0,
+        "SMA_km": 48.694e3,
+        "initialAngle": 180
+      },
+      {
+        "Name": "Hydra",
+        "PeriodDays":  38.20177,
+        "PeriodInt": 11.0,
+        "SMA_km": 64.738e3,
+        "initialAngle": 180
+      }
+    ]
+  },
+  {
+    "index": 5,
+    "Title": "A distant exoplanet system",
+    "Primary": "Kepler-223",
+    "Link": "https://en.wikipedia.org/wiki/Kepler-223",
+    "MainColor": "#ff8a80",
+    "bodies": [
+      {
+        "Name": "KOI-730.01",
+        "PeriodDays":  7.3845,
+        "PeriodInt": 3.0,
+        "SMA_km": 149.600e6,
+        "initialAngle": 0
+      },
+      {
+        "Name": "KOI-730.02",
+        "PeriodDays":  9.8456,
+        "PeriodInt": 4.0,
+        "SMA_km": 182.512e6,
+        "initialAngle": 60
+      },
+      {
+        "Name": "KOI-730.03",
+        "PeriodDays":  14.7887,
+        "PeriodInt": 6.0,
+        "SMA_km": 254.320e6,
+        "initialAngle": 300
+      },
+      {
+        "Name": "KOI-730.04",
+        "PeriodDays":  19.7257,
+        "PeriodInt": 8.0,
+        "SMA_km": 314.160e6,
+        "initialAngle": 180
+      }
+    ]
+  }
+]
