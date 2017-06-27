@@ -66,18 +66,18 @@ d3.json("data/resonances.json", function(error, resonances) {
   var mySmallTilesCol = myResonanceContainer.append("div")
     .attr("class",function(d,i){
       if((i%2)==1){
-        return "class","col-xs-4 push-xs-8 macroHalfDiv";
+        return "class","col-md-4 push-md-8 col-xs-12 macroHalfDiv";
       }else{
-        return "class","col-xs-4 macroHalfDiv";
+        return "class","col-md-4 col-xs-12 macroHalfDiv";
       }
     }
   );
   var myLargeTileCol = myResonanceContainer.append("div")
     .attr("class",function(d,i){
       if((i%2)==1){
-        return "class","col-xs-8 pull-xs-4 macroHalfDiv";
+        return "class","col-md-8 pull-md-4 col-xs-12 macroHalfDiv";
       }else{
-        return "class","col-xs-8 macroHalfDiv";
+        return "class","col-md-8 col-xs-12 macroHalfDiv";
       }
     }
   );
@@ -99,8 +99,8 @@ d3.json("data/resonances.json", function(error, resonances) {
   /*******************************/
   /* grab some global size stats */
   /*******************************/
-  Globals.TileWidth = Number(d3.select("#resonance0Container .titleTile").style("width").split("px")[0]);
-  Globals.TileHeight = Number(d3.select("#resonance0Container .titleTile").style("height").split("px")[0]);
+  Globals.TileWidth = Number(d3.select("#resonance0Container .orbitTile").style("width").split("px")[0]);
+  Globals.TileHeight = Number(d3.select("#resonance0Container .orbitTile").style("height").split("px")[0]);
   Globals.SprioWidth = Number(d3.select("#resonance0Container .spiroTile").style("width").split("px")[0]);
   Globals.SpiroHeight = Number(d3.select("#resonance0Container .spiroTile").style("height").split("px")[0]);
   Globals.T0 = Date.now();
@@ -586,7 +586,7 @@ d3.json("data/resonances.json", function(error, resonances) {
         .attr("id","narr1.5")
         .append("p")
           .attr("class","narrativeText")
-          .html("Neptune and Pluto are in 3:2 Resonance.  Every 3 times Neptune orbits the Sun, Pluto does exactly twice. <br>Notice the difference in the patterns made by Neptune+Pluto's 3:2 Resonance & Titan+Hyperion's 4:3 Resonance.");
+          .html("Neptune and Pluto are in 3:2 Resonance.  Every 3 times Neptune orbits the Sun, Pluto does exactly twice. <br>Notice the difference in the patterns made by Neptune+Pluto's 3:2 Resonance (above) & Titan+Hyperion's 4:3 Resonance (below).");
       d3.select("#contentContainer").append("div")
         .attr("class", "narrative")
         .attr("id","narr2.5")

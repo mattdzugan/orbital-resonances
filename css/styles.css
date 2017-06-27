@@ -104,8 +104,7 @@ h1,h2,h3,h4,h5{
   color: #f0f5f9;
   font-family: "butlermedium", serif;
   font-size: 14px;
-  margin-top: -5px;
-  margin-bottom: 60px;
+  margin-top: -8px;
 }
 @media (min-width: 544px) {
   #headerContent h2{
@@ -127,7 +126,17 @@ h1,h2,h3,h4,h5{
     font-size: 30px;
   }
 }
-
+#headerContent .introLine{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+#headerContent .introLine a{
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
 
 .leadTextBox{
   margin-top: 100px;
@@ -231,17 +240,19 @@ a, a:hover {
   padding-right: 10px;
 }
 .titleTile h3{
-  font-size: 24px;
+  font-size: 32px;
   line-height: 1.1;
 }
 @media (min-width: 768px) {
   .titleTile h3{
-    font-size: 32px;
+    font-size: 36px;
+    height: 35vh;
   }
 }
 @media (min-width: 992px) {
   .titleTile h3{
     font-size: 42px;
+    height: 35vh;
   }
 }
 
@@ -678,7 +689,7 @@ a, a:hover {
 }
 .sprioCogText{
   fill: #c9d6de;
-  font-size: 6px;
+  font-size: 8px;
 }
 @media (min-width: 544px) {
   .sprioCogText{
